@@ -5,13 +5,17 @@ document.getElementsByClassName('form-data-contact')[0].addEventListener('submit
     var input= sanitizeSerialize($(this).serialize());
 
     if(input.nombre.length > 0 && input.telefono.length > 0 && input.mensaje.length > 0){
+        /**
+         * arturo.a_calcaneo@mailjet.com
+         * Calcaneo#935
+         */
         Email.send({
             Host: "smtp.gmail.com", 
             Username: "arthurogoldenon@gmail.com", 
             Password: "calcaneo935", 
             To: 'arthurogoldenon@gmail.com', 
             From: input.email, 
-            Subject: "Te habla "+input.nombre, 
+            Subject: "Hola, Te habla "+input.nombre, 
             Body: input.mensaje+"\n\nMi Telefono es: "+input.telefono
         }).then(function(response){
             console.log(response);

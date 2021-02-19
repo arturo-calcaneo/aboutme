@@ -2,7 +2,6 @@
 .form-input{
     position: relative;
     border: 0;
-    border-color: transparent;
     border-bottom: 1px solid black;
     transition: 350ms;
     width: 54.5%;
@@ -11,6 +10,7 @@
     padding-right: 1rem;
     font-size: 115%;
     font-weight: bold;
+    outline: none;
 }
 
 .form-input:active,
