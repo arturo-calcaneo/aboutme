@@ -22,6 +22,8 @@
         <script src="res/libraries/bootstrap/bootstrap.bundle.min.js"></script>
         <!-- Third party plugin JS-->
         <script src="res/libraries/jquery/jquery.easing.min.js"></script>
+        <!-- SMTP Library -->
+        <script src="res/libraries/smtp_v3/smtp.js"></script>
     </head>
     <body>
         <!-- Navigation-->
@@ -238,19 +240,22 @@
                 <div class="resume-section-content">
                     <h2 class="mb-5"><span>Contáctame </span><span style="color: #DC9B51;">Ahora</span></h2>
                     <ul class="fa-ul mb-0">
-                        <form>
+                        <form class="form-data-contact">
                             <div class="form-group">
+                                <label class="bold identifier">Nombre:</label> <br/>
                                 <input type="text" class="form-input" name="nombre" placeholder="Nombre" />
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-input" name="nombre" placeholder="Dirección Email" />
+                                <label class="bold identifier">Dirección Email:</label> <br/>
+                                <input type="text" class="form-input" name="email" placeholder="Dirección Email" />
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-input" name="nombre" placeholder="Número de Teléfono" />
+                                <label class="bold identifier">Número de Teléfono:</label> <br/>
+                                <input type="text" class="form-input" name="telefono" placeholder="Número de Teléfono" />
                             </div>
                             <div class="form-group">
-                                <label class="bold">Mensaje: </label> <br/>
-                                <textarea class="form-input" style="height: 115px;"></textarea>
+                                <br/> <label class="bold">Mensaje: </label> <br/>
+                                <textarea class="form-input" name="mensaje" style="height: 115px;"></textarea>
                             </div>
                             <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
                         </form>
@@ -262,5 +267,6 @@
         <!-- Javascript Scripts -->
         <script src="js/scrollEffect.js"></script>
         <script src="js/formInput.js"></script>
+        <script src="js/form.js"></script>
     </body>
 </html>

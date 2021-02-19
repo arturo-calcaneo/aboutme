@@ -11,6 +11,9 @@ for(const input of document.getElementsByClassName('form-input')){
         inputPlaceholder[count]= inputElement.placeholder;
 
         inputElement.placeholder= '';
+
+        // Cuando se seleccione el input, mostrar identificador
+        inputElement.parentElement.children[0].classList.add('show');
     });
 
     input.addEventListener('blur', function(event){
@@ -19,13 +22,25 @@ for(const input of document.getElementsByClassName('form-input')){
         // Reactivar el placeholder
         inputElement.placeholder= inputPlaceholder[count];
 
-        // Si hay texto en el input..
-        if(inputElement.value.length > 0){
-            inputElement.style.fontWeight= 'lighter';
-        }else{
-            inputElement.style.removeProperty('font-weight');
-        }
+        inputProperties(inputElement);
     });
 
     count++;
+}
+
+(function(){
+    for(const input of document.getElementsByClassName('form-input')){
+        inputProperties(input);
+    }
+})();
+
+function inputProperties(element){
+    // Si hay texto en el input..
+    if(element.value.length > 0){
+        element.style.fontWeight= 'lighter';
+        element.parentElement.children[0].classList.add('show');
+    }else{
+        element.style.removeProperty('font-weight');
+        element.parentElement.children[0].classList.remove('show');
+    }
 }
