@@ -4,24 +4,25 @@ document.getElementsByClassName('form-data-contact')[0].addEventListener('submit
 
     var input= sanitizeSerialize($(this).serialize());
 
-
-    if(input.nombre.length > 0 && input.email.length > 0 && input.telefono.length > 0 && input.mensaje.length > 0){
-        
+    if(input.nombre.length > 0 && input.telefono.length > 0 && input.mensaje.length > 0){
+        Email.send({
+            Host: "smtp.gmail.com", 
+            Username: "arthurogoldenon@gmail.com", 
+            Password: "calcaneo935", 
+            To: 'arthurogoldenon@gmail.com', 
+            From: input.email, 
+            Subject: "Te habla "+input.nombre, 
+            Body: input.mensaje+"\n\nMi Telefono es: "+input.telefono
+        }).then(function(response){
+            console.log(response);
+        })
     }else{
-        
+        Swal.fire({
+            icon: 'error',
+            title: 'Ingrese todos los datos necesarios!..',
+            confirmButtonText: 'Continuar'
+        });
     }
-
-    /*Email.send({
-        Host: "smtp.gmail.com", 
-        Username: "arthurogoldenon@gmail.com", 
-        Password: "calcaneo935", 
-        To: 'receiver@email_address.com', 
-        From: "sender@email_address.com", 
-        Subject: "Sending Email using javascript", 
-        Body: "Well that was easy!!"
-    }).then(function(response){
-        console.log(response);
-    })*/
 });
 
 function sanitizeSerialize(serialize){
@@ -31,7 +32,7 @@ function sanitizeSerialize(serialize){
 
     for(var j=0; j < values.length; j++){
         aux= values[j].split('=');
-        newValues[aux[0]]= aux[1].trim();
+        newValues[aux[0]]= decodeURIComponent(aux[1]).trim();
     }
 
     return newValues;
