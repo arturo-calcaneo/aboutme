@@ -24,6 +24,9 @@
         <script src="res/libraries/jquery/jquery.easing.min.js"></script>
         <!-- SMTP Library -->
         <script src="res/libraries/smtp_v3/smtp.js"></script>
+        <!-- SweetAlert 2 -->
+        <script src="res/libraries/sweetalert2/sweetalert2.js"></script>
+        <script src="res/libraries/sweetalert2/polyfill.js"></script>
     </head>
     <body>
         <!-- Navigation-->
@@ -243,19 +246,19 @@
                         <form class="form-data-contact">
                             <div class="form-group">
                                 <label class="bold identifier">Nombre:</label> <br/>
-                                <input type="text" class="form-input" name="nombre" placeholder="Nombre" />
+                                <input type="text" class="form-input" name="nombre" placeholder="Nombre" required/>
                             </div>
                             <div class="form-group">
                                 <label class="bold identifier">Dirección Email:</label> <br/>
-                                <input type="text" class="form-input" name="email" placeholder="Dirección Email" />
+                                <input type="email" class="form-input" name="email" placeholder="Dirección Email" required/>
                             </div>
                             <div class="form-group">
                                 <label class="bold identifier">Número de Teléfono:</label> <br/>
-                                <input type="text" class="form-input" name="telefono" placeholder="Número de Teléfono" />
+                                <input type="tel" class="form-input" name="telefono" placeholder="Número de Teléfono" required/>
                             </div>
                             <div class="form-group">
                                 <br/> <label class="bold">Mensaje: </label> <br/>
-                                <textarea class="form-input" name="mensaje" style="height: 115px;"></textarea>
+                                <textarea class="form-input" name="mensaje" style="height: 115px;" required></textarea>
                             </div>
                             <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
                         </form>

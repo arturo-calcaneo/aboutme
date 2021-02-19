@@ -2,9 +2,14 @@
 document.getElementsByClassName('form-data-contact')[0].addEventListener('submit', function(event){
     event.preventDefault();
 
-    var inputValues= getValues($(this).serialize());
+    var input= sanitizeSerialize($(this).serialize());
 
-    console.log(inputValues);
+
+    if(input.nombre.length > 0 && input.email.length > 0 && input.telefono.length > 0 && input.mensaje.length > 0){
+        
+    }else{
+        
+    }
 
     /*Email.send({
         Host: "smtp.gmail.com", 
@@ -19,14 +24,14 @@ document.getElementsByClassName('form-data-contact')[0].addEventListener('submit
     })*/
 });
 
-function getValues(serialize){
+function sanitizeSerialize(serialize){
     var values= serialize.split('&');
     var aux;
     var newValues= {};
 
     for(var j=0; j < values.length; j++){
         aux= values[j].split('=');
-        newValues[aux[0]]= aux[1];
+        newValues[aux[0]]= aux[1].trim();
     }
 
     return newValues;
