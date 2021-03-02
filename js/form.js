@@ -4,13 +4,7 @@ document.getElementsByClassName('form-data-contact')[0].addEventListener('submit
 
     var input= sanitizeSerialize($(this).serialize());
 
-    if(input.nombre.length < 1 && input.telefono.length < 1 && input.mensaje.length < 1){
-        Swal.fire({
-            icon: 'error',
-            title: 'Ingrese todos los datos necesarios!..',
-            confirmButtonText: 'Continuar'
-        });
-    }
+    //console.log(input);
 });
 
 function sanitizeSerialize(serialize){
