@@ -1,4 +1,11 @@
 window.onload= function(){
+    // Escribir mi nombre con typed.js
+    new Typed('.nombre-tpd', {
+        stringsElement: '.content-name',
+        typeSpeed: 67,
+        backSpeed: 65,
+        showCursor: false
+    });
     // Mostrar la edad en el <span></span>
     document.getElementById('mi-edad').innerText= obtenerEdad();
 };

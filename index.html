@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <meta name="description" content="Página web que describe el contenido de mi portafolio y trabajos realizados durante a lo largo de mi trayectoria profesional."/>
         <meta name="autor" content="Arturo Alejandro Calcaneo Badillo"/>
-        <title>Portafolio - Arturo Alejandro Calcaneo Badillo</title>
+        <title>Portafolio | Arturo Alejandro Calcaneo Badillo</title>
         
         <!-- Font Awesome icons (versión gratuita)-->
         <script src="res/libraries/fontawesome_free_5.15.1/all.js"></script>
@@ -28,6 +28,8 @@
         <!-- SweetAlert 2 -->
         <script src="res/libraries/sweetalert2/sweetalert2.js"></script>
         <script src="res/libraries/sweetalert2/polyfill.js"></script>
+        <!-- Typed.js -->
+        <script src="res/libraries/typedjs/typed.js"></script>
     </head>
     <body>
         <!-- Navigation-->
@@ -43,7 +45,7 @@
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experiencia">Experiencia</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#educacion">Educación</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Habilidades</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#intereses">Intereses</a></li>
+                    <!-- <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#intereses">Intereses</a></li> -->
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#certificaciones">Certificaciones</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contacto">Contáctame</a></li>
                 </ul>
@@ -54,10 +56,11 @@
             <!-- Acerca de-->
             <section class="resume-section" id="acercade">
                 <div class="resume-section-content">
-                    <h1 class="mb-0">
-                        Arturo A.
-                        <span style="color: #DC9B51;">Calcaneo B.</span>
-                    </h1>
+                    <div class="content-name" style="display: none;">
+                        <span>Arturo A. <span style="color: #DC9B51;">Calcaneo B.</span></span> 
+                    </div>
+                    <h1 class="mb-0 nombre-tpd"></h1>
+                    
                     <div class="subheading mb-5">
                         México · Veracruz, Ver 91810 · (+52) 2292098172
                     </div>
@@ -133,7 +136,7 @@
             </section>
             <hr class="m-0" />
 
-            <!-- Skills-->
+            <!-- Habilidades-->
             <section class="resume-section" id="skills">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Habilidades</h2>
@@ -161,11 +164,15 @@
                         </li>
                         <li>
                             <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Repositorios y GitBash
+                            Manejo de Control de Versiones
                         </li>
                         <li>
                             <span class="fa-li"><i class="fas fa-check"></i></span>
                             API REST
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            SEO Orgánico
                         </li>
                     </ul>
                 </div>
@@ -173,13 +180,13 @@
             <hr class="m-0" />
 
             <!-- Intereses-->
-            <section class="resume-section" id="intereses">
+            <!-- <section class="resume-section" id="intereses">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Intereses</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris lacinia libero id urna congue congue. Morbi nec porta lacus. Quisque vitae augue in turpis vestibulum scelerisque id at ante. Cras libero justo, congue in sodales id, faucibus et nunc. Proin vel dignissim ipsum, vitae vestibulum arcu. Praesent rutrum finibus dolor sed interdum. Nullam at sagittis mauris. Maecenas vel nibh nec ante ultrices fringilla. Nam quis bibendum erat, in blandit ligula. Nullam eget diam sed erat tempor vulputate ac at orci. Suspendisse lacus magna, varius quis bibendum eu, pretium ac elit. Sed eget est libero. Sed bibendum aliquet urna, non tempor libero congue eget. Suspendisse volutpat, libero et consequat vestibulum, urna nisi commodo dui, ac egestas ex neque vel diam. Nulla lacus nibh, tincidunt vitae condimentum a, vulputate elementum diam. </p>
                 </div>
             </section>
-            <hr class="m-0" />
+            <hr class="m-0" /> -->
 
             <!-- Certificaciones-->
             <section class="resume-section" id="certificaciones">
