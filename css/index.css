@@ -48,3 +48,53 @@
     margin-right: 0.5rem !important;
     margin-bottom: 1.25rem !important;
 }
+
+.text-primary{
+    color: #0867b4 !important;
+}
+
+.card-horizontal {
+    display: flex;
+    flex: 1 1 auto;
+}
+
+.img-square-wrapper > svg,
+.img-square-wrapper > img{
+    position: relative;
+    top: 1.3rem;
+}
+
+.card:hover{
+    cursor: pointer;
+}
+
+.card *{
+    -webkit-user-select: none !important;
+    user-select: none !important;
+}
+
+.card-title{
+    margin-bottom: 0.45rem !important;
+}
+
+.cards .card,
+.cards-2 .card,
+.cards-3 .card{
+    float: left !important;
+    width: 199px !important;
+}
+
+.cards .card,
+.cards-2 .card,
+.cards-3 .card{
+    margin-right: 0.65rem;
+    margin-bottom: 0.65rem;
+}
+
+.cards-2 .card{
+    width: 216px !important;
+}
+
+.cards-3 .card{
+    width: 270px !important;
+}
