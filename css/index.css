@@ -98,3 +98,32 @@
 .cards-3 .card{
     width: 270px !important;
 }
+
+.btn-primary {
+    color: #fff;
+    background-color: #0867b4 !important;
+    border-color: #1978c5 !important;
+}
+
+.btn-primary:focus, .btn-primary.focus {
+    color: #fff;
+    background-color: #0867b4 !important;
+    border-color: #0f71c2 !important;
+    box-shadow: 0 0 0 0.2rem #5b8cb4 !important;
+}
+
+@media screen and (max-width: 991px){
+    .d-991-c1{
+        margin-top: 0.5rem !important;
+        margin-bottom: 0.5rem !important;
+        margin-left: 0.5rem !important;
+        margin-right: 0.5rem !important;
+    }
+    .d-991-c2{
+        padding-top: 0.25rem !important;
+        padding-bottom: 0.75rem !important;
+    }
+    .d-991-c2 a{
+        padding-left: 0.75rem !important;
+    }
+}

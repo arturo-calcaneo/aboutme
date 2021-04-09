@@ -11,6 +11,7 @@
     font-size: 115%;
     font-weight: bold;
     outline: none;
+    background-color: transparent !important;
 }
 
 .form-input:active,
