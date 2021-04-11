@@ -37,21 +37,6 @@
     background-color: #272c33 !important;
 }
 
-/*.identifier{
-    opacity: 0;
-    transition: opacity 210ms ease-out;
-    height: 0;
-    margin-top: 2px;
-    margin-bottom: 2px;
+.btn.btn-custom:focus{
+    box-shadow: 0 0 0 0.2rem #c1c2c4 !important;
 }
-
-.show{
-    opacity: 1;
-    height: auto;
-}*/
-
-/*@media screen and (max-width: 768px){
-    .form-input{
-        width: 80.5%;
-    }
-}*/
