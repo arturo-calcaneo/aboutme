@@ -4,8 +4,8 @@ document.getElementsByClassName('form-data-contact')[0].addEventListener('submit
 
     var input= sanitizeSerialize($(this).serialize());
     
-    if(input.nombre.length > 0 && input.mensaje.length > 0){
-        var texto= "*Responsable:* "+input.nombre;
+    if(input.nombre.length > 0 && input.apellidos.length > 0 && input.mensaje.length > 0){
+        var texto= "*Responsable:* "+input.nombre+" "+input.apellidos+"\n";
         texto+= "*Email:* "+input.email+"\n";
         texto+= "*Mensaje:*\n";
         texto+= input.mensaje;

@@ -1,4 +1,4 @@
-
+/*
 var inputElement;
 var inputPlaceholder= [];
 
@@ -43,4 +43,4 @@ function inputProperties(element){
         element.style.removeProperty('font-weight');
         element.parentElement.children[0].classList.remove('show');
     }
-}
+}*/
