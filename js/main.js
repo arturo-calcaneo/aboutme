@@ -8,6 +8,9 @@ window.onload= function(){
     });
     // Mostrar la edad en el <span></span>
     document.getElementById('mi-edad').innerText= obtenerEdad();
+
+    // Cargar contenido de Habilidades
+    $('#skills').load('habilidades.html');
 };
 
 function obtenerEdad(){
