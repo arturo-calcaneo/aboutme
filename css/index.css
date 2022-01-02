@@ -1,10 +1,11 @@
 
 #sideNav{
-    background-color: #22272E;
+    background-color: white;
 }
 
 #sideNav .navbar-nav .nav-item .nav-link{
     font-size: 78% !important;
+    color: #222222 !important;
 }
 
 .bold{
@@ -26,11 +27,11 @@
 }
 
 .nav-link{
-    border-left: 1px solid rgba(255,255,255,0.25);
+    border-left: 3px solid rgba(0,0,0,0.3);
 }
 
 .nav-link.active{
-    border-left: 1px solid whitesmoke;
+    border-left: 3px solid #F35608;
 }
 
 .social-icons .social-icon:hover{
@@ -38,7 +39,11 @@
 }
 
 #contactame{
-    color: #0867b4 !important;
+    color: #F25C11 !important;
+}
+
+.range-dates{
+    color: #F25C11;
 }
 
 .social-icons .social-icon.navbar-bottom{
@@ -113,6 +118,10 @@
 }
 
 @media screen and (max-width: 991px){
+    #sideNav{
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+    }
+
     .d-991-c1{
         margin-top: 0.5rem !important;
         margin-bottom: 0.5rem !important;
