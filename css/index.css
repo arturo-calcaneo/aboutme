@@ -117,6 +117,11 @@
     box-shadow: 0 0 0 0.2rem #5b8cb4 !important;
 }
 
+.modal-content{
+    border-radius: 0;
+    border:0;
+}
+
 @media screen and (max-width: 991px){
     #sideNav{
         border-bottom: 1px solid rgba(0,0,0,0.1);
@@ -134,5 +139,12 @@
     }
     .d-991-c2 a{
         padding-left: 0.75rem !important;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .modal-dialog {
+        max-width: 699px;
+        margin: 1.75rem auto;
     }
 }

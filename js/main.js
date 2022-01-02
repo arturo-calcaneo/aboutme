@@ -11,6 +11,9 @@ window.onload= function(){
 
     // Cargar contenido de Habilidades
     $('#skills').load('habilidades.html');
+
+    // Cargar modal de más información
+    $('#modal_n1').load('mas-informacion.html');
 };
 
 function obtenerEdad(){
