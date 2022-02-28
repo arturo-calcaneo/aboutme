@@ -30,6 +30,9 @@
         <script src="res/libraries/sweetalert2/polyfill.js"></script>
         <!-- Typed.js -->
         <script src="res/libraries/typedjs/typed.js"></script>
+        
+        <!-- Habilidades CSS -->
+        <link rel="stylesheet" type="text/css" href="css/habilidades.css">
     </head>
     <body data-hijacking="on" data-animation="parallax">
         <!-- Navigation-->
@@ -46,11 +49,10 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav d-991-c2">
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#acercade">Acerca de</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experiencia">Experiencia</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#educacion">Educación</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experiencia">Experiencia</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Habilidades</a></li>
-                    <!-- <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#certificaciones">Certificaciones</a></li> -->
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#proyectos">Proyectos</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#certificaciones">Certificados</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contacto">Contáctame</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#" data-toggle="modal" data-target="#exampleModal">Más Información</a></li>
                 </ul>
@@ -77,56 +79,16 @@
                         <img src="res/images/bandera de mexico.png" width="32px" class="mb-2 mr-1">México - Veracruz. Ver · (+52) 2292098172
                     </div>
                     <p class="lead mb-4 text-justify">
-                        Universitario de <span id="mi-edad"></span> años de edad. Inspirado por la planificación y desarrollo de sistemas, especialmente en el área de creación de software e interfaces.
-                        Me emociona la idea de pensar en las infinitas soluciones que pueden existir para un problema y la satisfacción que esta me genera cuando se ha cumplido dicho objetivo, pero lo que más me agrada, es el lado artístico y creativo que posee un software.
+                        Universitario / Freelance con <span id="mi-edad"></span> años de edad. Inspirado por la planificación y desarrollo de soluciones, especialmente en el área de creación de software e interfaces intuitivas (UX / UI).
+                        Me emociona la idea de pensar en las infinitas soluciones que pueden existir para un problema y la satisfacción que esta me genera cuando se ha cumplido dicho objetivo, pero lo que más me genera un buen sabor de boca, es el lado artístico, analista, crítico y creativo que posee un software.
                     </p>
                     <p class="lead mb-5">
-                        <a id="contactame" href="#contacto"><img src="res/images/whatsapp.png" style="position: relative;bottom: 2px" width="24px"> Contáctame Aquí</a>
+                        <a id="contactame" href="#contacto">Contáctame Aquí</a>
                     </p>
                     <div class="social-icons">
                         <a class="social-icon" target="_blank" href="https://www.linkedin.com/in/arturocalcaneo"><i class="fab fa-linkedin-in"></i></a>
                         <a class="social-icon" target="_blank" href="https://github.com/arturo-calcaneo/"><i class="fab fa-github"></i></a>
                         <a class="social-icon" target="_blank" href="https://www.facebook.com/calcaneoarturo"><i class="fab fa-facebook-f"></i></a>
-                    </div>
-                </div>
-            </section>
-            <hr class="m-0" />
-
-            <!-- Experiencia-->
-            <section class="resume-section" id="experiencia">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Experiencia</h2>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Desarrollador de Software en <a id="contactame" href="https://grouptdsi.com/" target="_blank">Group TDSI</a></h3>
-                            <div class="subheading mb-3">Socio Industrial</div>
-                            <p></p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="range-dates">Agosto 2021 - Noviembre 2021</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Desarrollador Web en <a id="contactame" href="https://www.facebook.com/NextcamVer" target="_blank">Nextcam</a></h3>
-                            <div class="subheading mb-3">Servicio de Mantenimiento y Desarrollo Web</div>
-                            <p></p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="range-dates">Marzo 2021 - Agosto 2021</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Desarrollador Web Independiente</h3>
-                            <div class="subheading mb-3">Servicio de Mantenimiento y Desarrollo Web</div>
-                            <p></p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="range-dates">Mayo 2018 - Marzo 2021</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Proyecto de Prototipos 2019</h3>
-                            <div class="subheading mb-3">GESOL</div>
-                            <p></p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="range-dates">Julio 2018 - Marzo 2019</span></div>
                     </div>
                 </div>
             </section>
@@ -172,32 +134,56 @@
             </section>
             <hr class="m-0" />
 
+            <!-- Experiencia-->
+            <section class="resume-section" id="experiencia">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Experiencia</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Desarrollador de Software en <a id="contactame" href="https://grouptdsi.com/" target="_blank">Group TDSI</a></h3>
+                            <div class="subheading mb-3">Socio Industrial</div>
+                            <p></p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="range-dates">Agosto 2021 - Noviembre 2021</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Desarrollador Web en <a id="contactame" href="https://www.facebook.com/NextcamVer" target="_blank">Nextcam</a></h3>
+                            <div class="subheading mb-3">Servicio de Mantenimiento y Desarrollo Web</div>
+                            <p></p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="range-dates">Marzo 2021 - Agosto 2021</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Desarrollador Web Independiente</h3>
+                            <div class="subheading mb-3">Servicio de Mantenimiento y Desarrollo Web</div>
+                            <p></p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="range-dates">Mayo 2018 - Marzo 2021</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Proyecto de Prototipos 2019</h3>
+                            <div class="subheading mb-3">GESOL</div>
+                            <p></p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="range-dates">Julio 2018 - Marzo 2019</span></div>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+
             <!-- Habilidades-->
             <section class="resume-section" id="skills">
             </section>
             <hr class="m-0" />
 
             <!-- Proyectos -->
-            <section class="resume-section" id="proyectos">
+            <section class="resume-section" id="certificaciones">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Proyectos</h2>
-                    <div class="card-columns">
-
-                        <div class="card">
-                            <div style="position: absolute" class="ml-2 mt-2">
-                                <small><b>EN PROGRESO</b></small>
-                            </div>
-                            <img class="card-img-top" src="res/images/workinprogress.png" width="96px" alt="JInputField Preview">
-                            <div class="card-body">
-                                <h5 class="card-title">JInputField</h5>
-                                <p class="card-text text-justify">Componente que entrega una versión mas completa de lo que pudo ser un JTextField de Java, totalmente personalizable y con mayor accesibilidad para el desarrollador de aplicaciones de escritorio. <a href="https://github.com/arturo-calcaneo/JInputField" target="_blank"><b>Ver más...</b></a></p>
-                                
-                                <small class="mr-2"><i class="fab fa-java fa-4x color-java" style="font-size:20px"></i> Java</small>
-                                <small><img src="res/images/monitor.png" width="18px" style="position:relative;bottom:1px"> Escritorio</small>
-                            </div>
-                        </div>
-
-                    </div>
+                    <h2 class="mb-5">Certificados</h2>
+                    
                 </div>
             </section>
             <hr class="m-0" />
